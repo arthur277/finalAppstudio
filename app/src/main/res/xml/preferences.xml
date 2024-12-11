@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General Settings">
+
+        <CheckBoxPreference
+            android:key="notifications_enabled"
+            android:title="Enable Notifications"
+            android:summary="Enable or disable notifications"
+            android:defaultValue="true"
+            android:summaryOff="Notifications are disabled"
+            android:summaryOn="Notifications are enabled"
+            android:useSimpleSummaryProvider="true"
+            android:enabled="true"/>
+
+        <EditTextPreference
+            android:key="username"
+            android:title="Username"
+            android:summary="Enter your username"
+            android:defaultValue=""
+            android:inputType="text"
+            android:lines="1"
+            android:singleLine="true"
+            android:maxLines="1"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
